@@ -141,6 +141,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://ahmetturp.github.io/dokumantasyon/servis-yonetimi/vardiyalar/</loc>
+         <lastmod>2022-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ahmetturp.github.io/dokumantasyon/sirket-takvimi/kategoriler/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
