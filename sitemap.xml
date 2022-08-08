@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+         <loc>https://ahmetturp.github.io/dokumantasyon/</loc>
+         <lastmod>2022-08-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ahmetturp.github.io/dokumantasyon/ipuclari/</loc>
          <lastmod>2022-08-08</lastmod>
          <changefreq>daily</changefreq>
@@ -12,11 +17,6 @@
     </url>
     <url>
          <loc>https://ahmetturp.github.io/dokumantasyon/surum-notlari/</loc>
-         <lastmod>2022-08-08</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://ahmetturp.github.io/dokumantasyon/anasayfa/</loc>
          <lastmod>2022-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
