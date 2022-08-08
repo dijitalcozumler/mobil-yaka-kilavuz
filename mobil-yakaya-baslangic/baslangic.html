@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="../src/css/bs-stepper.css">-->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="bs-stepper.min.css">
+    <title>bs-stepper virtual test</title>
+  </head>
+  <body>
+    <div class="container-fluid" style="margin-top:1rem;">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <h5>1- Kendi Başına Deneyimle</h5>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body" style="padding:0%">
+              
+              <!--Accordion #1 Start-->
+              <div class="row"  id="haberBaslik">
+                <div class="col-md-12 mt-2">
+                  <div id="stepper2" class="bs-stepper">
+                    <div class="bs-stepper-header">
+                      
+                      <div class="step" data-target="#test-nl-1">
+                        <button type="button" class="btn step-trigger">
+                          <span class="bs-stepper-circle">1</span>
+                          <span class="bs-stepper-label">Mobil Yaka'ya Hızlı Başlangıç</span>
+                        </button>
+                      </div>
+                      <!-- Step eklemek için, kopyalama başlangıç
+                      (data-target unique olmalıdır.) -->
+                      <div class="line"></div>
+                      <div class="step" data-target="#test-nl-2">
+                        <div class="btn step-trigger">
+                          <span class="bs-stepper-circle">2</span>
+                          <span class="bs-stepper-label">Kendine Haber Gönder</span>
+                        </div>
+                      </div>
+                      <!-- Step eklemek için, kopyalama sonu -->
+                      <div class="line"></div>
+                      <div class="step" data-target="#test-nl-3">
+                        <button type="button" class="btn step-trigger">
+                          <span class="bs-stepper-circle">3</span>
+                          <span class="bs-stepper-label">Kendine Tebrik Gönder</span>
+                        </button>
+                      </div>
+                      <div class="line"></div>
+                      <div class="step" data-target="#test-nl-4">
+                        <button type="button" class="btn step-trigger">
+                          <span class="bs-stepper-circle">4</span>
+                          <span class="bs-stepper-label">Kendine Bildirim Gönder</span>
+                        </button>
+                      </div>
+                      <div class="line"></div>
+                      <div class="step" data-target="#test-nl-5">
+                        <button type="button" class="btn step-trigger">
+                          <span class="bs-stepper-circle">5</span>
+                          <span class="bs-stepper-label">Firma Bilgilerini Yönet</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="bs-stepper-content">
+                      <!-- Step eklendikten sonra step'in içeriğinin, kopyalama başlangıcı
+                      (data-target değeri, ilgili step ile aynı olmalıdır.) -->
+                      <div id="test-nl-1" class="content">
+                        <div class="card">
+                          <h6 class="card-header">5 Dakikada Mobil Yaka'ya Hızlı Başlangıç Yapın</h6>
+                          <div class="card-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=N6PrRpBQbzc" allowfullscreen></iframe>
+                            </div>
+                            <br>
+                            <h6 class="card-title">Mobil Yaka'ya hızlıca başlamak istersen yukarıdaki videoyu izleyebilirsin. Senin için hızlı başlangıçta takip edebileceğin bazı püf noktalarını aşağıda sıraladık:</h6>
+                              <ul class="list">
+                                <li><b>Mobil Yaka</b> uygulamasını <a href="https://play.google.com/store/apps/details?id=com.datamarket.dijitalyaka" target="blank">
+                                  <b>Google Play Store</b></a> veya <a href="https://apps.apple.com/tr/app/mobil-yaka/id1532713247" target="blank"><b>App Store</b></a> üzerinden telefonuna indir.</li>
+                                <li>Uygulamaya <b>telefon numarası</b> ile giriş yaptıktan sonra sizin için hazırladığımız içeriklere göz at.</li>
+                                <li><a href="https://panel.mobilyaka.com/" target="blank"><b>Yönetim Paneli</b></a>'ne giriş yap. Panelden içerik oluştur.</li>
+                                <li>İlk haberini oluştur ve uygulamadan görüntüle.</li>
+                                <li>İlk tebriğini gönder ve uygulamadan görüntüle.</li>
+                              </ul>
+                                
+                            <p class="card-text">Şimdi bir sonraki adıma geçelim.</p>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                              
+                              <a class="btn btn-primary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper2.next()">İleri</a>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Step eklendikten sonra step'in içeriğinin, kopyalama sonu -->
+                      <div id="test-nl-2" class="content">
+                        <div class="card">
+                          <h5 class="card-header">Şimdi Bir Haber Ekleyin ve Uygulamadan Habere Göz Atın</h5>
+                          <div class="card-body">
+                            <br>
+                            <h5 class="card-title">İşte izlemen gereken adımlar:</h5>
+                              <ul class="list">
+                                <li>Mobil Yaka panel <b>Haberler</b> menüsünden <b>Yeni Haber Oluştur</b>'a tıkla.</li>
+                                <li><b>Başlık</b> ve <b>Açıklama</b> kısımlarını doldur.</li>
+                                <li><b>Aktifleştirme Durumu</b>'nu açık hale getir. İçerikleri pasife çekersen uygulamada gözükmeyecektir. </li>
+                                <li>Habere <b>youtube linki, görsel ve doküman</b> ekleyebilirsin.</li>
+                                <li>Haberin alıcısı olarak <b>kendi ismini</b> seç, <b>Onayla ve Gönder</b>'e tıkla. </li>
+                                <li>Haberin sana geldiğini uygulamadan görebilirsin!</li>
+                              </ul>
+                                
+                            <p class="card-text">Harika! İşte haber göndermek bu kadar basit. <br> Bir sonraki adımda haydi birlikte bir tebrik gönderelim.</p>
+
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                              <a class="btn btn-primary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper2.next()">İleri</a>
+                              <a class="btn btn-secondary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper2.previous()">Geri</a>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="test-nl-3" class="content">
+                        <div class="card">
+                          <h5 class="card-header">Bir Tebrik Ekleyin ve Uygulamadan Tebriğe Göz Atın</h5>
+                          <div class="card-body">
+                            <br>
+                            <h5 class="card-title">İşte izlemen gereken adımlar:</h5>
+                              <ul class="list">
+                                <li>Mobil Yaka panel <b>Tebrikler</b> menüsünden <b>Tebrik Oluştur</b>'a tıkla.</li>
+                                <li>İstersen hazır şablonlar üzerinden, tebriğini otomatik olarak hazırlayabilirsin.</li>
+                                <li><b>Tebri Türü</b> için uygun olan seçeneği tıkla.</li>
+                                <li>Tebriğe bir <b>Açıklama</b> metni gir.</li>
+                                <li>Listeden tebrik etmek istediğin <b>kişileri seç</b></li>
+                                <li>Uygulamadan tebriği inceleyebilirsin!</li>
+                              </ul>
+                                
+                            <p class="card-text">Mobil Yaka ile tebrikleri yönetmek de işte bu kadar kolay! <br> Şimdi bir de bildirim gönderelim.</p>
+
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                              <a class="btn btn-primary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper2.next()">İleri</a>
+                              <a class="btn btn-secondary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper2.previous()">Geri</a>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="test-nl-4" class="content">
+                        <div class="card">
+                          <h5 class="card-header">Kendinize Bildirim Gönderin ve Telefonunuzda Bildirimi Görün</h5>
+                          <div class="card-body">
+                            <br>
+                            <h5 class="card-title">İşte izlemen gereken adımlar:</h5>
+                            <ul class="list">
+                              <li>Mobil Yaka panel <b>Bildirimler</b> menüsünden <b>Yeni Bildirim Oluştur</b>'a tıkla.</li>
+                              <li><b>Başlık</b> alanına bildirim metnini yaz. </li>
+                              <li><b>Bildirim tipi</b>'ni seç. Bu hangi modüle yönlendirme yapılacağını belirtir. </li>
+                              <li>Alıcı olarak <b>kendi ismini</b> seç ve <b>Onayla ve Gönder</b>'e tıkla</li>
+                              <li>Telefonuna bir bildirim gelmiş olmalı 😊!</li>
+                              <li>Unutma, Mobil Yaka'da haber, anket, eğitim vb. içerikleri oluşturduğunda, otomatik olarak bildirim gitmesini seçebilirsin.
+                                Manuel olarak bildirim girmene gerek kalmaz. Bildirimler modülünü ise içerikle giden bildirimden bağımsız olarak kullanabilirsin.
+                              </li>
+                            </ul>
+                                
+                            <p class="card-text">Mobil Yaka ile tebrikleri yönetmek de işte bu kadar kolay! <br> Şimdi bir de bildirim gönderelim.</p>
+
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                              <a class="btn btn-primary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper2.next()">İleri</a>
+                              <a class="btn btn-secondary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper2.previous()">Geri</a>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="test-nl-5" class="content">
+                        <div class="card">
+                          <h5 class="card-header">Firma Bilgilerini Gözden Geçirin ve Güncelleyin</h5>
+                          <div class="card-body">
+                            <br>
+                            <h5 class="card-title">İşte izlemen gereken adımlar:</h5>
+                              <ul class="list">
+                                <li><b>Firma Yönetimi</b> menüsüne tıkla.</li>
+                                <li>Bu menüden firma bilgilerini güncelleyebildiğini, kullanım raporları alabildiğini, departman, lokasyon bilgilerini yönetebildiğini ve 
+                                  sosyal ve dış bağlantılar ekleyebildiğini göreceksin.</li>
+                                <li>Bilgileri güncellemek için <b>Firma Bilgileri</b> sekmesinin altından <b>Şirket Bilgilerini Düzenle</b>'ye tıkla.</li>
+                                <li><b>Şirket Logo</b>, <b>Mobil Açılış Sayfa</b> görselleri ve <b>Slogan Metni</b>, uygulama ilk açıldığında kullanıcılara gözükür.</li>
+                                <li>Diğer görseller ve bilgiler ise, uygulamada hamburger menünün altındaki <b>Hakkımızda</b> kısmında gözükecektir.</li>
+                              </ul>
+                                
+                            <p class="card-text">Haydi şimdi diğer kullanıcıları oluşturalım. </p>
+
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                              
+                              <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseExample">
+                                Sonraki Aşama
+                              </button>
+                              <a class="btn btn-secondary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper2.previous()">Geri</a>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Accordion #1 End-->
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <h5>2- Diğerlerini Dahil Et</h5>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <!--Accordion #2 Start-->
+              <div class="row"  id="haberBaslik">
+                <div class="col-md-12 mt-2">
+                  <div id="stepper3" class="bs-stepper">
+                    <div class="bs-stepper-header">
+                      <div class="step" data-target="#asama-2-1">
+                        <button type="button" class="btn step-trigger">
+                          <span class="bs-stepper-circle">1</span>
+                          <span class="bs-stepper-label">Yeni Kullanıcı Tanımlama</span>
+                        </button>
+                      </div>
+                      <div class="line"></div>
+                      <div class="step" data-target="#asama-2-2">
+                        <div class="btn step-trigger">
+                          <span class="bs-stepper-circle">2</span>
+                          <span class="bs-stepper-label">Yeni Kullanıcılara Bildirim Gönder</span>
+                        </div>
+                      </div>
+                      <div class="line"></div>
+                      <div class="step" data-target="#asama-2-3">
+                        <button type="button" class="btn step-trigger">
+                          <span class="bs-stepper-circle">3</span>
+                          <span class="bs-stepper-label">Önerileri Topla, Değerlendir & Raporla</span>
+                        </button>
+                      </div>
+                      <div class="line"></div>
+                      <div class="step" data-target="#asama-2-4">
+                        <button type="button" class="btn step-trigger">
+                          <span class="bs-stepper-circle">4</span>
+                          <span class="bs-stepper-label">Anket Yayınla, Cevaplandır & Raporla</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="bs-stepper-content">
+                      <div id="asama-2-1" class="content">
+                        <div class="card">
+                          <h5 class="card-header">Hadi Şimdi Yeni Kullanıcı Tanımlayalım ve Diğerlerini Dahil Edelim</h5>
+                          <div class="card-body">
+                            <br>
+                            <h5 class="card-title">İşte kullanıcıları yönetirken kullanabileceğin bazı püf noktaları:</h5>
+                              <ul class="list">
+                                <li>Kullanıcıları <b>teker teker</b> veya <b>çoklu olarak</b> excel şablonu üzerinden tanımlayabilirsin</li>
+                                <li>Çoklu kullanıcı tanımlamak için excel şablonu indir. Eklemek istediğin kullanıcı bilgileriyle bu exceli doldurarak, sisteme geri yükle.</li>
+                                <li>Kullanıcılara şifre bilgisini içeren bir SMS gönderilecektir. Yeni kullanıcılar uygulamayı indirdikten sonra, telefon numaraları ve 
+                                  şifreleriyle artık Mobil Yaka'ya giriş yapabilirler.</li>
+                                <li>Teker teker kullancı eklemek için <b>Yeni Kullanıcı Oluştur</b> butonunu kullanabilirsin. Kullanıcı ve ilk şifre bilgilerini ekrandaki 
+                                  alanlara girebilirsin. Kaydettiğinde yeni kullanıcı oluşturulmuş olacak. </li>
+                                <li>Unutma, <b>Profil Bilgi Gösterimi</b>'ni <b>Açık</b> yaparsan, uygulamanın <b>Rehber</b> kısmında kullanıcı <b>e-posta</b> ve <b>telefon</b> bilgileri görünür olur.</li>
+                                <li>Eğer, <b>Yönetici Yetki Tanımı</b>'nı <b>Açık</b> hale getirirsen, kullanıcı <b>admin kullanıcısı</b> olur ve sistemi yönetebilir. </li>
+                                <li>Eğer, <b>Süper Yönetici Yetki Tanımı</b>'nı <b>Açık</b> hale getirirsen, kullanıcı, yetkilendirme yönetimi yapabilir.</li>
+                              </ul>
+                                
+                            <p class="card-text">Yeni eklediğin kullanıcılara bildirim göndermeye ne dersin? Haydi başlayalım!</p>
+
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                              
+                              <a class="btn btn-primary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper3.next()">İleri</a>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="asama-2-2" class="content">
+                        <div class="card">
+                          <h5 class="card-header">Şimdi Yeni Kullanıcılara Bir Bildirim Gönderin </h5>
+                          <div class="card-body">
+                            <br>
+                            <h5 class="card-title">Birkaç basit adımda bildirim gönderebilirsin:</h5>
+                              <ul class="list">
+                                <li>Mobil Yaka panelde <b>Bildirimler</b> menüsünden <b>Yeni Bildirim Oluştur</b>'a tıkla.</li>
+                                <li>Başlık alanına <b>bildirim metnini</b> yaz. Bildirim metninde kullanıcılardan <b>Öneri</b> iletmelerini 
+                                  rica edebilirsin. Bir sonraki adımda önerilere göz atacağız. </li>
+                                <li><b>Bildirim Tipi</b>'ni tipini seç. Bildirime tıklayan kişiler o modüle yönlendirilirler.</li>
+                                <li>Alıcı olarak <b>kendini</b> ve <b>diğer kullanıcıları</b> seç ve <b>Onayla ve Gönder</b>'e tıkla</li>
+                                <li>Bip bip! Telefonuna bir bildirim gelmiş olmalı 😊</li>
+
+                              </ul>
+                                
+                            <p class="card-text">Şimdi de yeni oluşturduğun kullanıcıların paylaşacakları önerilere göz atalım.</p>
+
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                              <a class="btn btn-primary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper3.next()">İleri</a>
+                              <a class="btn btn-secondary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper3.previous()">Geri</a>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="asama-2-3" class="content">
+                        <div class="card">
+                          <h5 class="card-header">Kullanıcılardan Öneri Toplamaya ve Önerileri Değerlendirmeye Ne Dersin?</h5>
+                          <div class="card-body">
+                            <br>
+                            <h5 class="card-title">Kullanıcılar pratik bir şekilde önerilerini kuruma iletebilirler:</h5>
+                            <ul class="list">   
+                                <li>Mobil uygulama üzerinden, <b>Uygulamalar</b> menüsüne ve ardından <b>Öneri Paylaş</b> sekmesine tıkla. </li>
+                                <li>Önerine istersen <b>görsel</b> ekleyebilirsin. </li>
+                                <li><b>Konu</b> seç ve <b>Mesajınız</b> kısmına fikrini yaz</li>
+                                <li><b>Önerim herkesle paylaşılsın</b> butonuna tıklayarak, admin onaylarsa, önerinin herkes tarafından görülmesine izin verebilirsin.</li>
+                                <li><b>İsminiz Paylaşılsın</b> butonuna tıklamazsan, önerin anonim olarak iletilecektir. </li>
+                                <li><b>Gönder</b> butonuna tıklayarak önerini iletmiş oldun. Harika!</li>
+                              </ul>
+                                
+                            
+                            <h5 class="card-title">Kullanıcıların ilettikleri önerilere panelden göz atabilirsin. Tek yapman gereken <b>Öneriler</b> menüsüne gitmek. Tüm öneriler orada gözükür.</h5>
+                            <ul class="list">    
+                              <li>Öneriler menüsünde gelen tüm kayıtların bir listesini göreceksin. Yeni kullanıcılardan gelen önerilerin üzerine gel ve <b>Düzenle</b>'ye tıkla.</li>
+                                <li>Gelen önerilere istersen <b>Sonuç Açıklama</b> ekleyebilir, <b>Durumu</b>'nu kurumuna özel olarak kategorileştirebilirsin.</li>
+                                <li>Sol altta <b>Herkese Yayınla</b> butonu göreceksin. Eğer, öneriyi paylaşan kişi izin vermişse, bu öneriyi herkesle paylaşabilirsin.</li>
+                            </ul>
+
+                            <p class="card-text">Kullanıcılardan önerileri topladık ve bazı işlemler yaptık. <br> Şimdi sırada anket yayınlayarak geri bildirim toplamak var.
+                              <br>Hadi başlayalım!</br></p>
+                            
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                              <a class="btn btn-primary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper3.next()">İleri</a>
+                              <a class="btn btn-secondary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper3.previous()">Geri</a>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="asama-2-4" class="content">
+                        <div class="card">
+                          <h5 class="card-header">Hadi Anket Oluşturup, Diğerlerinin Geri Bildirimlerini Alalım.</h5>
+                          <div class="card-body">
+                            <br>
+                            <h5 class="card-title">Anket oluşturmak için tek yapman gereken temel bazı bilgileri doldurmak ve soruları hazırlamak. İşte izlemen gereken adımlar:</h5>
+                              <ul class="list">
+                                <li>Panelden <b>Anketler</b> menüsüne tıkla. Ardından <b>Yeni Anket Oluştur</b> butonuna tıklayarak başlayabilirsin. </li>
+                                <li><b>Başlık</b>, <b>Açıklama</b>, <b>Anket Eforu</b>, <b>Başlangıç</b> ve <b>Bitiş Tarihi</b> gibi bazı temel bilgileri dolduruyoruz. </li>
+                                <li>İstersen uygulamada gözükmesi için <b>Görsel</b> ekleyebilirsin.</li>
+                                <li>Anketin anonim olup olmayacağını belirtmek için <b>Katılımcı Bilgileri Raporlansın</b> seçeneğini belirtiyoruz.</li>
+                                <li>Bu anketin kime gitmesini istediğinizi seçip <b>Kaydet</b>'e basabilirsin.</li>
+                              </ul>
+
+                              <h5 class="card-title">Şimdi sırada ankete soru eklemek var:</h5>
+                              <ul class="list">
+                                <li>Az önce kaydettiğin anketi panelden bulup <b>Düzenle</b>'ye tıkla.</li>
+                                <li>Sayfayı aşağıya doğru kaydır ve <b>Yeni Soru Oluştur</b> butonuna tıkla.</li>
+                                <li><b>Soru Metni</b>'ni yaz, <b>Soru Sırası</b>'nı belirt ve <b>Soru Tipi</b>'ni seç.</li>
+                                <li><b>Kaydet</b> butonuna tıkla. <b>Tebrikler!</b> İşte ilk anket sorusunu oluşturmuş oldun!</li>
+                                <li>Başka sorular eklemek istersen aynı şekilde oluşturabilirsin. </li>
+                              </ul>                              
+                              
+                            <p class="card-text">Diğer kullanıcıları da dahil ederek bazı işlemler yaptık. Artık, Mobil Yaka'yla ilgili tüm işlemleri yapabileceğine şüphe yok. 
+                              <br>Eğer genel eğitim videolarına göz atmak istersen bir sonraki aşamaya geçebilirsin.</p>
+
+                            <div class="d-grid gap-2 col-6 mx-auto">                   
+                              <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseExample">
+                                Sonraki Aşama
+                              </button>
+                              <a class="btn btn-secondary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper3.previous()">Geri</a>
+                            </div>                 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Accordion #2 End-->
+
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <h5>3- Genel Eğitim İçeriği</h5>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                            <!--Accordion #3 Start-->
+                            <div class="row" id="haberBaslik">
+                              <div class="col-md-12 mt-2">
+                                <div id="stepper4" class="bs-stepper vertical">
+                                  <div class="bs-stepper-header">
+                                    <div class="step" data-target="#asama-3-1">
+                                      <button type="button" class="btn step-trigger">
+                                        <span class="bs-stepper-circle">1</span>
+                                        <span class="bs-stepper-label">Haber Oluşturma</span>
+                                      </button>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="step" data-target="#asama-3-2">
+                                      <div class="btn step-trigger">
+                                        <span class="bs-stepper-circle">2</span>
+                                        <span class="bs-stepper-label">Tebrik Oluşturma</span>
+                                      </div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="step" data-target="#asama-3-3">
+                                      <button type="button" class="btn step-trigger">
+                                        <span class="bs-stepper-circle">3</span>
+                                        <span class="bs-stepper-label">Bildirim Oluşturma</span>
+                                      </button>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="step" data-target="#asama-3-4">
+                                      <button type="button" class="btn step-trigger">
+                                        <span class="bs-stepper-circle">4</span>
+                                        <span class="bs-stepper-label">Eğitim Oluşturma</span>
+                                      </button>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="step" data-target="#asama-3-5">
+                                      <button type="button" class="btn step-trigger">
+                                        <span class="bs-stepper-circle">5</span>
+                                        <span class="bs-stepper-label">Anket Oluşturma</span>
+                                      </button>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="step" data-target="#asama-3-6">
+                                      <button type="button" class="btn step-trigger">
+                                        <span class="bs-stepper-circle">6</span>
+                                        <span class="bs-stepper-label">Oylama Oluşturma</span>
+                                      </button>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="step" data-target="#asama-3-7">
+                                      <button type="button" class="btn step-trigger">
+                                        <span class="bs-stepper-circle">7</span>
+                                        <span class="bs-stepper-label">Kullanıcı Yönetimi</span>
+                                      </button>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="step" data-target="#asama-3-8">
+                                      <button type="button" class="btn step-trigger">
+                                        <span class="bs-stepper-circle">8</span>
+                                        <span class="bs-stepper-label">Şirket Takvimi Oluşturma</span>
+                                      </button>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="step" data-target="#asama-3-9">
+                                      <button type="button" class="btn step-trigger">
+                                        <span class="bs-stepper-circle">9</span>
+                                        <span class="bs-stepper-label">Firma Bilgileri Yönetimi</span>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="bs-stepper-content" style="width:100%">
+                                    <div id="asama-3-1" class="content">
+                                      <div class="card">
+                                        <h5 class="card-header">Mobil Yaka'da Nasıl Haber Oluşturulur?</h5>
+                                        <div class="card-body">
+                                          <br>
+                                          <h5 class="card-title">İşte izlemen gereken adımlar:</h5>
+                                            <ul class="list">
+                                              <li>Panelden <b>Haberler</b> menüsüne tıkla. Ardından <b>Yeni Haber Oluştur</b> butonuna tıklayarak başlayabilirsin. </li>
+                                              <li><b>Başlık</b>, <b>Kısa Açıklama</b>, <b>Detaylı Açıklama</b> kısımlarına haberle ilgili metin içeriğini gir. Kısa 
+                                                Açıklama haber ana ekranında, Detaylı Açıklama habere tıklandığında gözüken metinlerdir.</li>
+                                              <li><b>Aktifleştirme Durumu</b> haberin uygulamada görünmesini sağlar. Haberleri <b>Pasif</b>'e çekerek uygulamadan kaldırabilirsin.</li>
+                                              <li><b>Ana Haber Durumu</b>'nu aktif yaparsan, haber üste sabitlenir ve buradaki haberler arasında sağ ve sola kaydırarak geçiş yapılabilir. </li>
+                                              <li>Habere bir <b>youtube videosu</b> ekleyebilirsin. Video linkini eklediğinde, habere tıklandığında içerikte gözükecek şekilde video eklenmiş olur. </li>
+                                              <li>Habere <b>İçerik Görseli</b> ve <b>Detay Görsel</b> ekleyebilirsin. İçerik görseli ana ekranda, detay görsel habere tıklandığında görünür. Görsel 
+                                                boyut önerileri için sağ üstteki soru işaretine tıklayabilirsin.</li>
+                                              <li>Haberleri <b>Kurumsal</b>, <b>Sosyal</b> veya <b>Kişisel Gelişim</b> olarak kategorilendirebilirsin. Sosyal ve Kişisel Gelişim kategorisini seçersen 
+                                              habere doküman ekleyebilirsin.</li>
+                                              <li>Haber <b>Yayınlanma Tarihi</b>'nde yapacağın seçime göre gönderilir. Herhangi bir seçim yapmazsan, haber kaydettiğinde hemen gönderilir.</li>
+                                              <li><b>Tüm Kullanıcılara Gönderilsin</b> seçeneği ile sistemdeki herkese haberi yayınlayabilirsin veya <b>Alıcılar Listesi</b>'nden hangi grup veya kişilere 
+                                              göndermek istediğini seçebilirsin.</li>
+                                              <li><b>Onayla ve Gönder</b> butonuna tıklayarak, haberi göndermiş oldun :). Dilediğin zaman geriye dönüp haberde değişiklik yapabilirsin. </li>
+                                            </ul>
+                                              
+                                          <div class="d-grid gap-2 col-6 mx-auto">
+                                            
+                                            <a class="btn btn-primary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper4.next()">İleri</a>
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div id="asama-3-2" class="content">
+                                      <div class="card">
+                                        <h5 class="card-header">Tebrik Nasıl Oluşturulur?</h5>
+                                        <div class="card-body">
+                                          <br>
+                                          <h5 class="card-title">İşte izlemen gereken adımlar:</h5>
+                                            <ul class="list">
+                                              <li>Panelden <b>Tebrikler</b> menüsüne tıkla. İlk olarak <b>Şablonlar</b> sekmesini inceleyebilir, kendine ait şablonlar oluşturabilirsin.</li>
+                                              <li><b>Tebrikler</b> sekmesinden <b>Tebrik Oluştur</b> butonunu tıklayarak, yeni kayıt oluşturabilirsin.</li>
+                                              <li><b>Bildirim Gönderme Durumu</b> tebrikle beraber, uygulama bildirimi gidip gitmeyeceğini belirler. <b>Evet</b> olarak tutabilirsin.</li>
+                                              <li><b>Şablon</b> seçeneğindeki şablonlardan seçim yaparsan, <b>Tebrik Türü</b>, <b>Açıklama</b>, <b>Rozet</b> ve <b>Detay Görseli</b>'nin otomatik dolması sağlanır.</li>
+                                              <li><b>Tebrik Türü</b> seçimi uygulama üzerinde gözükecek <b>renkli etiketler</b> ile kategorizasyonu sağlar.</li>
+                                              <li><b>Açıklama</b> kısmına bu tebrik içeriğinde paylaşmak istediğin metni ekleyebilirsin.</li>
+                                              <li><b>Aktifleştirme Durumu</b> tebriğin uygulamada görünmesini sağlar. Tebrikleri <b>Pasif</b>'e çekerek uygulamadan kaldırabilirsin.</li>
+                                              <li>Tebriğe <b>Rozet</b> görseli ve <b>Detay Görseli</b> ekleyebilirsin. Rozet görseli ana ekranda, detay görsel tebriğe tıklandığında görünür. Görsel 
+                                                boyut önerileri için sağ üstteki soru işaretine tıklayabilirsin.</li>
+                                              <li>Tebrik <b>Yayınlanma Tarihi</b>'nde yapacağın seçime göre gönderilir. Tebrik, herhangi bir seçim yapmazsan, kaydettiğinde hemen gönderilir.</li>
+                                              <li>Tüm tebrikler herkesle paylaşılır. <b>Tebrik Edilecek Kişiler</b> kısmında eklediğin kişiler, mesajın içeriğinde listelenir.</li>
+                                            </ul>
+              
+                                          <div class="d-grid gap-2 col-6 mx-auto">
+                                            <a class="btn btn-primary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper4.next()">İleri</a>
+                                            <a class="btn btn-secondary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper4.previous()">Geri</a>
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div id="asama-3-3" class="content">
+                                      <div class="card">
+                                        <h5 class="card-header">Bildirim Nasıl Oluşturulur?</h5>
+                                        <div class="card-body">
+                                          <br>
+                                          <h5 class="card-title">İşte izlemen gereken adımlar:</h5>
+                                            <ul class="list">
+                                              <li>Panelden <b>Bildirimler</b> menüsüne tıkla. Daha önce giden tüm bildirimlerin bir listesini göreceksin. <b>Yeni Bildirim Oluştur</b>'a tıklayarak
+                                                mesajını istediğin kişi ve gruplara iletebilirsin.</li>
+                                              <li><b>Başlık</b> kısmına mesajını yazabilirsin.</li>
+                                              <li><b>Bildirim Tipi</b> olarak <b>Bildiri</b> seçersen, 3 taneye kadar belge ekleyebilirsin. Belge paylaşmak için bu seçeneği kullanabilirsin.</li>
+                                              <li><b>Bildirim Tipi</b> için modüllerden birini seçersen, bildirime tıklayan kişiler o modüle yönlendirilirler.</li>
+                                              <li><b>Yayınlanma Tarihi</b> için takvimden hangi gün ve saatte bildirimin gitmesini istiyorsan seçebilirsin.</li>
+                                              <li>Bildirimi herkese göndermek istersen <b>Tüm Kullanıcılara Gönderilsin</b> seçeneğini <b>Evet</b> yapabilirsin veya <b>Alıcılar Listesi</b>'nden 
+                                                grup veya kişileri seçebilirsin.</li>
+                                            </ul>
+                                            
+
+              
+                                          <div class="d-grid gap-2 col-6 mx-auto">
+                                            <a class="btn btn-primary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper4.next()">İleri</a>
+                                            <a class="btn btn-secondary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper4.previous()">Geri</a>
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div id="asama-3-4" class="content">
+                                      <div class="card">
+                                        <h5 class="card-header">Eğitim Nasıl Oluşturulur?</h5>
+                                        <div class="card-body">
+                                          <br>
+                                          <h5 class="card-title">İşte izlemen gereken adımlar:</h5>
+                                            <ul class="list">
+                                              <li>Eğitim oluştururken ilk olarak eğitimin <b>temel bilgilerini</b> dolduracağız. Ardından eğitime <b>dersler</b> ekleyip, her bir ders için <b>testler</b> tanımlayabiliriz.</li>
+                                              <li>Panelden <b>Eğitimler</b> menüsüne tıkla. İstersen ilk olarak <b>Kategoriler</b> tanımlayabilirsin. Tıkladığında tüm kategorilerin bir listesini de göreceksin.</li>
+                                              <li><b>Eğitimler</b> sekmesinden <b>Yeni Eğitim Oluştur</b> butonuna tıklayarak bir eğitim oluşturabilirsin. Aynı zamanda, <b>Eğitim Detay Raporu</b> tanımladığın eğitimler 
+                                                için detay raporları almanı sağlar. Ama önce <b>Yeni Eğitim Oluştur</b>'a tıklayarak, bir eğitim tanımlayalım. </li>
+                                              <li><b>Bildirim Gönderme Durumu</b> eğitimle beraber, uygulama bildirimi gidip gitmeyeceğini belirler. <b>Evet</b> olarak tutabilirsin.</li>
+                                              <li><b>Başlık</b> ve <b>Kısa Açıklama</b> kısımlarına eğitimle ilgili açıklama metinlerini gir. Böylece, kullanıcılara eğitim hakkında fikir verebilirsin.</li>
+                                              <li><b>Aktifleştirme Durumu</b> eğitimin uygulamada görünmesini sağlar. Eğitimleri <b>Pasif</b>'e çekerek uygulamadan kaldırabilirsin veya bitiş tarihi geldiğinde otomatik pasif olur.</li>
+                                              <li><b>Eğitim Tipi,</b> seçimi eğitimin içeriğinin <b>Mixed</b>, <b>PDF</b>, <b>PowerPoint</b> veya <b>Video</b> içerikleri üzerinden yapıldığını belirtir.</li>
+                                              <li><b>Katılım Şartı</b>'nı <b>Opsiyonel</b> veya <b>Zorunlu</b> olarak belirleyebilirsin. Bu seçenek bilgi amaçlıdır. </li>
+                                              <li><b>Sertifika Verilme Durumu</b> <b>Aktif</b> olursa, bir link üzerinden <b>sertifika görseli</b> ekleyebilir ve başarılı olan kullanıcılara <b>sertifika</b> verebilirsin.</li>
+                                              <li>Eğitim geçerlilik süresi için <b>Eğitim Başlangıç Tarihi</b> ve <b>Eğitim Bitiş Tarihi</b> belirt.</li>
+                                              <li>Alıcıları seç ve <b>Kaydet</b>.</li>
+                                            </ul>
+                                          <h5 class="card-title">Ders eklemek için izlemen gereken adımlar:</h5>
+                                            <ul class="list">
+                                              <li>Şimdi bu eğitime bir ders ekleyelim. İlk olarak, eğitim listesinden oluşturduğun eğitimi bul ve <b>Düzenle</b> seçeneğini tıkla.</li>
+                                              <li>Sayfayı aşağı kaydırdığında <b>Yeni Ders Oluştur</b> butonunu göreceksin. Butona tıkla ve ilgili dersi alanları doldurarak kaydet.</li>
+                                              <li>Unutma, video üzerinden ders tanımlamak için <b>Eğitim Tipi</b> olarak mutlaka <b>Video</b> seçeneğini seçmelisin. Böylece, link ekleyebileceğin bir alan çıkar.</li>
+                                              <li>Kaydetmeden önce <b>Ders Sırası</b> ve <b>Ders Eforu (Dakika)</b> bilgilerini de doldurmayı unutma.</li>
+                                            </ul>
+                                          <h5 class="card-title">Test oluşturmak için izlemen gereken adımlar:</h5>
+                                            <ul class="list">
+                                              <li>İstersen şimdi az önce oluşturduğumuz derse, test ekleyelim. Dersler listesinden, o ders için <b>Düzenle</b> butonuna tıkla. Sayfayı aşağıya kaydır.</li>
+                                              <li><b>Yeni Test Oluştur</b> butonuna tıkla. Test <b>Başlık</b> ve <b>Açıklama</b> bilgilerini doldur. <b>Başarı Kriteri Puanı (1-100)</b> ile testten geçme notunu belirtebilirsin.</li>
+                                              <li>Şimdi testi düzenle diyerek, yeni sorular ekleyebiliriz. <b>Yeni Soru Oluştur</b> butonuna tıkla. <b>Soru Metni</b> kısmına sorunun içeriğini ve <b>Cevap Metni</b>
+                                              kısmına cevapları, hangi şık veya şıkların doğru olduğunu belirterek, girebilirsin. </li>
+                                              <li>Yukarıdaki adımları izleyerek bir eğitime istediğin kadar farklı ders ve test ekleyebilirsin. </li>
+                                            </ul>
+                                            
+              
+                       
+                                          <div class="d-grid gap-2 col-6 mx-auto">
+                                            <a class="btn btn-primary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper4.next()">İleri</a>
+                                            <a class="btn btn-secondary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper4.previous()">Geri</a>
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div id="asama-3-5" class="content">
+                                      <div class="card">
+                                        <h5 class="card-header">Anket Nasıl Oluşturulur?</h5>
+                                        <div class="card-body">
+                                          <br>
+                                          <h5 class="card-title">İşte izlemen gereken adımlar:</h5>
+                                          <ul class="list">
+                                            <li>Panelden <b>Anketler</b> menüsüne tıkla. Ardından <b>Yeni Anket Oluştur</b> butonuna tıklayarak başlayabilirsin. </li>
+                                            <li><b>Başlık</b>, <b>Açıklama</b>, <b>Anket Eforu</b>, <b>Başlangıç</b> ve <b>Bitiş Tarihi</b> gibi bazı temel bilgileri dolduruyoruz. </li>
+                                            <li>İstersen uygulamada gözükmesi için <b>Görsel</b> ekleyebilirsin.</li>
+                                            <li>Anketin <b>Anonim</b> olup olmayacağını belirtmek için <b>Katılımcı Bilgileri Raporlansın</b> seçeneğini belirtiyoruz.</li>
+                                            <li>Bu anketin kime gitmesini istediğini seçip <b>Kaydet</b>'e basabilirsin.</li>
+                                          </ul>
+            
+                                          <h5 class="card-title">Şimdi sırada ankete soru eklemek var:</h5>
+                                          <ul class="list">
+                                            <li>Az önce kaydettiğin anketi panelden bulup <b>Düzenle</b>'ye tıkla.</li>
+                                            <li>Sayfayı aşağıya doğru kaydır ve <b>Yeni Soru Oluştur</b> butonuna tıkla.</li>
+                                            <li><b>Soru Metni</b>'ni yaz, <b>Soru Sırası</b>'nı belirt ve <b>Soru Tipi</b>'ni seç.</li>
+                                            <li><b>Kaydet</b> butonuna tıkla. <b>Tebrikler!</b> İşte ilk anket sorusunu oluşturmuş oldun!</li>
+                                            <li>Başka sorular eklemek istersen aynı şekilde oluşturabilirsin. </li>
+                                          </ul>      
+              
+                                          <div class="d-grid gap-2 col-6 mx-auto">
+                                            <a class="btn btn-primary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper4.next()">İleri</a>
+                                            <a class="btn btn-secondary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper4.previous()">Geri</a>
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div id="asama-3-6" class="content">
+                                      <div class="card">
+                                        <h5 class="card-header">Oylama Nasıl Oluşturulur?</h5>
+                                        <div class="card-body">
+                                          <br>
+                                          <h5 class="card-title">İşte izlemen gereken adımlar:</h5>
+                                          <ul class="list">
+                                            <li><b>Oylamalar</b> modülünde <b>5'li Likert</b> ölçeğinde, hızlı geri bildirimler toplayabilirsin. </li>
+                                            <li>Panelden <b>Oylamalar</b> menüsüne tıkla. Ardından <b>Yeni Oylama Oluştur</b> butonuna tıklayarak başlayabilirsin. </li>
+                                            <li><b>Başlık</b> <b>Başlangıç</b> ve <b>Bitiş Tarihi</b> gibi bazı temel bilgileri dolduruyoruz.</li>
+                                            <li>İstersen uygulamada gözükmesi için <b>Görsel</b> ekleyebilirsin.</li>
+                                            <li>Oylamalar herkese gönderilecektir. <b>Kaydet</b>'e tıklayarak oylamayı gönderebilirsin. </li>
+                                          </ul>
+            
+                                          <h5 class="card-title">Şimdi sırada oylamaya soru eklemek var:</h5>
+                                          <ul class="list">
+                                            <li>Az önce kaydettiğin oylamayı panelden bulup <b>Düzenle</b>'ye tıkla.</li>
+                                            <li>Sayfayı aşağıya doğru kaydır ve <b>Yeni Soru Oluştur</b> butonuna tıkla.</li>
+                                            <li><b>Açıklama</b> kısmına soru metnini yaz.</li>
+                                            <li><b>Oylama Tipi</b> olarak <b>Emoji</b>, <b>Rakam</b> veya <b>Yıldız</b> seçeneklerinden birini seçebilirsin.</li>
+                                            <li><b>Cevap Metni</b> kısmını dilediğin gibi değiştirebilirsin.</li>
+                                            <li><b>Kaydet</b> butonuna tıklayarak soruyu kaydedebilirsin.</li>
+                                            <li>Başka sorular eklemek istersen aynı şekilde oluşturabilirsin. </li>
+                                          </ul>    
+              
+                                          <div class="d-grid gap-2 col-6 mx-auto">
+                                            <a class="btn btn-primary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper4.next()">İleri</a>
+                                            <a class="btn btn-secondary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper4.previous()">Geri</a>
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div id="asama-3-7" class="content">
+                                      <div class="card">
+                                        <h5 class="card-header">Kullanıcıların Yönetimi Nasıl Yapılır?</h5>
+                                        <div class="card-body">
+                                          <br>
+                                          <h5 class="card-title">İşte izlemen gereken adımlar:</h5>
+                                          <ul class="list">
+                                            <li><b>Kullanıcılar</b> menüsünün altından <b>kullanıcı yönetimi</b>, <b>grup yönetimi</b> ve <b>özel gün kutlamaları</b>nı yönetebilirsin.</li>
+                                            <li>Kullanıcı eklemek, silmek veya düzenlemek için <b>Kullanıcılar</b> sekmesine tıkla. Kullanıcıları <b>teker teker</b> veya <b>çoklu 
+                                              olarak</b> excel şablonu üzerinden tanımlayabilirsin.</li>
+                                            <li>Çoklu kullanıcı tanımlamak için <b>Çoklu Kullanıcı Tanımla</b>'ya tıkla ve excel şablonu indir. Eklemek istediğin kullanıcı bilgileriyle 
+                                              bu exceli doldurarak, sisteme geri yükle.</li>
+                                            <li>Kullanıcılara <b>şifre bilgisini içeren bir SMS</b> gönderilecektir. Yeni kullanıcılar uygulamayı indirdikten sonra, telefon numaraları ve 
+                                              şifreleriyle artık Mobil Yaka'ya giriş yapabilirler.</li>
+                                            <li>Teker teker kullanıcı eklemek için <b>Yeni Kullanıcı Oluştur</b> butonunu kullanabilirsin. Kullanıcı ve ilk şifre bilgilerini ekrandaki 
+                                              alanlara girebilirsin. Kaydettiğinde yeni kullanıcı oluşturulmuş olacak. </li>
+                                            <li>Unutma, <b>Profil Bilgi Gösterimi</b>'ni <b>Açık</b> yaparsan, uygulamanın <b>Rehber</b> kısmında kullanıcı <b>e-posta</b> ve <b>telefon</b> bilgileri görünür olur.</li>
+                                            <li>Eğer, <b>Yönetici Yetki Tanımı</b>'nı <b>Açık</b> hale getirirsen, kullanıcı <b>admin kullanıcısı</b> olur ve sistemi yönetebilir. </li>
+                                            <li>Eğer, <b>Süper Yönetici Yetki Tanımı</b>'nı <b>Açık</b> hale getirirsen, kullanıcı yetkilendirme yönetimi yapabilir.</li>
+                                          </ul>
+                                          <h5 class="card-title">Grup yönetimi için izlemen gereken adımlar:</h5>
+                                          <ul class="list">
+                                            <li><b>Kullanıcılar</b> menüsünün altından <b>Kullanıcı Grupları</b> sekmesine tıkla.</li>
+                                            <li>Varolan grupların bir listesini göreceksin. Yeni grup tanımlamak için <b>Yeni Grup Oluştur</b> butonuna tıkla.</li>
+                                            <li><b>Aktifleştirme Durumu</b>'nu <b>Aktif</b> yaptıktan sonra <b>Kaydet</b> butonuyla grubu oluştur.</li>
+                                            <li>Sırada, gruba kullanıcı eklemek var. Az önce oluşturduğun grubu <b>Düzenle</b> diyerek <b>Gruba Kullanıcı Ekle</b>.</li>
+                                          </ul>
+                                          <h5 class="card-title">Özel Günler yönetimi için izlemen gereken adımlar:</h5>
+                                          <ul class="list">
+                                            <li><b>Kullanıcılar</b> menüsünün altından <b>Özel Günler</b> sekmesine tıkla.</li>
+                                            <li>Farklı kutlama türlerinin bir listesini göreceksin. Herhangi birini <b>Düzenle</b> diyerek, istediğin gibi ayarlayabilirsin.</li>
+                                            <li>Herhangi bir kutlama türünü kullanmayı tercih etmezsen <b>Aktifleştirme Durumu</b>'nu <b>Pasif</b>'e çekebilirsin.</li>
+                                            <li>Özel gün mesajları birer <b>bildirim</b>  olarak kullanıcılara gönderilir. Kişinin doğum günü <b>sadece kendisine</b> ve diğer kutlama türleri <b>tüm şirkete</b> otomatik gönderilir.</li>
+                                            <li>Unutma, bu kutlamaların uygun bir şekilde yapılması için kullanıcı oluştururken <b>Doğum Günü </b> ve <b>İşe Giriş Bilgileri</b>'ni belirtmen gerekir. </li>
+                                            <li>Son olarak, sağ üst tarafta yer alan <b>Özel Gün Raporu</b>'na tıklayarak, kutlamaların bir raporunu görebilirsin.</li>
+                                          </ul>
+                                      
+              
+                                          <div class="d-grid gap-2 col-6 mx-auto">
+                                            <a class="btn btn-primary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper4.next()">İleri</a>
+                                            <a class="btn btn-secondary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper4.previous()">Geri</a>
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div id="asama-3-8" class="content">
+                                      <div class="card">
+                                        <h5 class="card-header">Şirket Takvimi Nasıl Oluşturulur?</h5>
+                                        <div class="card-body">
+                                          <br>
+                                          <h5 class="card-title">İşte izlemen gereken adımlar:</h5>
+                                            <ul class="list">
+                                              <li>Panelden <b>Şirket Takvimi</b> menüsüne tıkla. İlk olarak <b>Kategoriler</b> sekmesinden oluşturacağın takvime uygun bir kategori oluşturmalısın.</li>
+                                              <li><b>Kategoriler</b> başlığının altından <b>Yeni Kategori Oluştur</b> butonuna tıkla ve <b>Kategori Adı</b>'nı ve <b>Renk Paleti</b>'nden istediğin bir rengi seç.</li>
+                                              <li>Daha sonra <b>Şirket Takvimi</b> sekmesinden <b>Yeni Bir Şirket Takvimi</b> oluşturabilirsin.</li>
+                                              <li><b>Etkinlik Adı</b>, <b>Açıklama</b>, <b>Etkinlik Kategorisi</b> ve <b>Etkinlik Tarihi</b> bilgilerini tamamla.</li>
+                                              <li><b>Kaydet</b> butonuyla takvim üzerinde etkinlik kategori rengi ile kaydın oluştuğunu görebilirsin.</li>
+                                            </ul>
+              
+                                          <div class="d-grid gap-2 col-6 mx-auto">
+                                            <a class="btn btn-primary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper4.next()">İleri</a>
+                                            <a class="btn btn-secondary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper4.previous()">Geri</a>
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div id="asama-3-9" class="content">
+                                      <div class="card">
+                                        <h5 class="card-header">Firma Bilgileri Nasıl Yönetilir?</h5>
+                                        <div class="card-body">
+                                          <br>
+                                          <h5 class="card-title">İşte izlemen gereken adımlar:</h5>
+                                          <ul class="list">
+                                            <li><b>Firma Yönetimi</b> menüsünün altında <b>Firma Bilgileri</b>'ni güncelleyebilir, <b>Rapolar</b> alabilir, <b>Departmanlar</b>
+                                            ve <b>Lokasyonlar</b>'ı güncelleyebilir, <b>Sosyal Bağlantılar</b> ve <b>Dış Bağlantılar</b> ekleyebilirsin.</li>
+                                            <li><b>Firma Bilgileri</b> sekmesinin altından <b>Şirket Bilgilerini Düzenle</b>'ye tıkla ve bilgileri kurumuna özel olarak düzenle.</li>
+                                            <li><b>Raporlar</b> sekmesinin altından aylık ve haftalık kullanım raporları alabilirsin.</li>
+                                            <li><b>Departmanlar</b> sekmesinden kurumunuzdaki departmanların tanımlamasını yapabilirsin. Kullanıcı oluştururken, kullanıcı bilgilerinde 
+                                              yeni bir departman belirtirsen, yeni departman otomatik olarak oluşturulur. </li>
+                                            <li><b>Lokasyonlar</b> sekmesinden kurumunuzun farklı lokasyonlarındaki ofislerini belirtebilirsin. Kullanıcı oluştururken, kullanıcı bilgilerinde 
+                                              yeni bir lokasyon belirtirsen, yeni lokasyon otomatik olarak oluşturulur.  </li>
+                                            <li><b>Sosyal Bağlantılar</b> sekmesinin altından, kurumunuzun sosyal medya hesaplarını ekleyebilirsin.</li>
+                                            <li><b>Dış Bağlantılar</b> sekmesinin altından, <b>Yeni Dış Bağlantı Oluştur</b> diyerek, herhangi bir websitesinin linkini ekleyebilir ve bu websitesini
+                                              Mobil Yaka içerisinden kolayca erişilebilir kılabilirsin.</li>
+                                          </ul>
+              
+                                            <div class="d-grid gap-2 col-6 mx-auto">
+                                            
+                                              <button class="btn btn-success" type="button">
+                                                Eğitimi Tamamladın!
+                                              </button>
+                                              <a class="btn btn-secondary" type="button" href="javascript: scrollToForm('#haberBaslik');" onclick="stepper4.previous()">Geri</a>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--Accordion #3 End-->
+
+
+                            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="dist/js/bs-stepper.js"></script>
+    <script src="bs-stepper.min.js"></script>
+    <!--Updated script below. Required for Accordion to work-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      // var stepper1Node = document.querySelector('#stepper1')
+      // var stepper1 = new Stepper(document.querySelector('#stepper1'))
+
+      // stepper1Node.addEventListener('show.bs-stepper', function (event) {
+      //   console.warn('show.bs-stepper', event)
+      // })
+      // stepper1Node.addEventListener('shown.bs-stepper', function (event) {
+      //   console.warn('shown.bs-stepper', event)
+      // })
+
+      var stepper2 = new Stepper(document.querySelector('#stepper2'), {
+        linear: false,
+        animation: true
+      })
+      var stepper3 = new Stepper(document.querySelector('#stepper3'), {
+        linear: false,
+        animation: true
+      })
+      var stepper4 = new Stepper(document.querySelector('#stepper4'), {
+        linear: false,
+        animation: true
+      })
+
+      function scrollToForm(scrollLocation) {
+        document.querySelector(scrollLocation).scrollIntoView({behavior: 'smooth'});
+      }
+
+      // Toggle Accordion Item #1
+      function toggle(event) {
+        var myCollapse = document.getElementsByClassName('collapse')[0];
+        var bsCollapse = new bootstrap.Collapse(myCollapse, {
+          toggle: true
+        });
+      }
+    </script>
+  </body>
+</html>
