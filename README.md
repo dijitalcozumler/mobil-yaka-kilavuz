@@ -1,2 +1,0 @@
-# mobil-yaka-kilavuz
- 
